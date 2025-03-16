@@ -2,65 +2,11 @@ import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 import Link from "next/link";
 import { twMerge } from "tailwind-merge";
-
-const pricingTiers = [
-  {
-    title: "Free",
-    monthlyPrice: 0,
-    buttonText: "Get started for free",
-    link: "/",
-    popular: false,
-    inverse: false,
-    features: [
-      "AI-powered product insights",
-      "Instant sourcing results",
-      "Limited access to marketplace data",
-      "Basic competitor analysis",
-      "Email support",
-    ],
-  },
-  {
-    title: "Monthly",
-    monthlyPrice: 9,
-    buttonText: "Sign up now",
-    link: "/",
-    popular: true,
-    inverse: true,
-    features: [
-      "Full AI-driven sourcing",
-      "Real-time deal scanning",
-      "Advanced marketplace analytics",
-      "Priority email & chat support",
-      "Access to exclusive product trends",
-      "Export sourcing data",
-      "Early access to new features",
-    ],
-  },
-  {
-    title: "Yearly",
-    yearlyPrice: 108,
-    buttonText: "Sign up now",
-    link: "/",
-    popular: false,
-    inverse: false,
-    features: [
-      "Full AI-powered sourcing access",
-      "Exclusive marketplace trends & insights",
-      "Dedicated account manager",
-      "Custom product filters & alerts",
-      "Historical price tracking",
-      "Bulk data export & API access",
-      "Advanced security & encryption",
-      "Automated supplier recommendations",
-      "Multi-marketplace integration",
-      "Premium 24/7 support",
-    ],
-  },
-];
+import { pricingTiers } from "@/constant";
 
 const Pricing = () => {
   return (
-    <section className="py-24">
+    <section className="py-24 bg-white">
       <div className="container px-4 md:px-0 mx-auto">
         <div className="max-w-[600px] mx-auto">
           <h1 className="text-center text-3xl md:text-[54px] md:leading-[60px] heading">
@@ -88,7 +34,7 @@ const Pricing = () => {
               <div
                 key={title}
                 className={twMerge(
-                  "p-10 rounded-3xl border max-w-xs w-full border-[#f1f1f1] shadow-[0_7px_14px_#EAEAEA]",
+                  "card",
                   inverse === true && "border-black bg-black text-white"
                 )}
               >

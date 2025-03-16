@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 backdrop-blur-xs z-10">
+    <header className="sticky top-0 backdrop-blur-xs z-1000">
       <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
         <p className="text-white/60 hidden md:flex">
           AI-Driven Sourcing. Maximum Profits. Zero Hassle.

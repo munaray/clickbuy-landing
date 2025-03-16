@@ -145,4 +145,7 @@
   .tag {
     @apply text-sm inline-flex border border-[#222]/10 px-3 py-1 rounded-lg tracking-tight;
   }
+  .card {
+    @apply p-10 rounded-3xl border max-w-xs w-full border-[#222222]/10 shadow-[0_7px_14px_#EAEAEA];
+  }
 }
